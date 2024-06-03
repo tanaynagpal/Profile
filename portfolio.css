@@ -384,9 +384,6 @@ nav .fa-solid{
 
 
 @media only screen and (max-width: 600px){
-    #header{
-        background-image: url(phone_bg.jpeg);
-    }
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -457,6 +454,17 @@ nav .fa-solid{
 
     .contact-left, .contact-right{
         flex-basis: 100%;
+    }
+
+    #about-img{
+
+        width: 340px;
+    }
+
+    #header{
+        
+        background-image: url(./home-bg-phone.jpeg.jpg);
+        padding: 5px;
     }
     
     
