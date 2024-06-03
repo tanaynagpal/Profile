@@ -93,12 +93,13 @@ nav ul li a:hover::after{
     padding: 10px 30px;
     border-radius: 6px;
     text-decoration: none;
-    color: white;
+    color: black;
     transition: background 0.35s;
 
 }
 .btn:hover{
     background: #05474c;
+    color:white
 }
 
 
@@ -461,3 +462,6 @@ nav .fa-solid{
     
 
 }   
+
+
+

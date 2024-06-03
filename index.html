@@ -209,10 +209,10 @@
             </div>
             <div class="contact-right">
                 <form>
-                    <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>                   
-                    <textarea name="Message" rows="6" placeholder="Enter Your Message" required></textarea>
-                    <button class="btn" type="submit">SUBMIT</button>
+                    <input type="text" name="Name" placeholder="Your Name" id="name" required>
+                    <input type="email" name="Email" placeholder="Your Email" id="email" required>                   
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message" id="message" required></textarea>
+                    <button class="btn" type="submit" onclick="sendMail()" id="submit-btn" >SUBMIT</button>
                 </form>
             </div>
         </div>
