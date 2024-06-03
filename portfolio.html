@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/8a3feb53c4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" alt="logo" width="300px" height="150px" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#portfolio">portfolio</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-list" onclick="openmenu()"></i>
+
+
+        </nav>
+        <div class="header-text">
+            <p>Building Tomorrow's AI</p>
+            <h1>Hi, I'm <span>Tanay Nagpal</span> <br>From India <br><br></h1>
+            <a href="My_CV.pdf" download class="btn">Download CV</a> 
+        </div>
+    </div>
+</div>
+
+<!-- -------------about--------------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpeg" alt="about" width="400px" height="670px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text"> <br>
+                    Confidently blending my passion and drive for computer science engineering, I possess a robust programming foundation and an unwavering enthusiasm for utilizing technology to tackle real-world challenges head-on. Embarking on a journey towards a Bachelor's degree in Computer Science and Engineering, my unwavering dedication lies in perpetually expanding my knowledge and keeping pace with the clarity of technological advancements.
+                    <br>
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                    <p class="tab-links" onclick="opentab('Interests')">Interests</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="Skills">
+                    <p>Technical Skills:</p>
+                    <ul>
+                        <li><span>Web Development</span><br>Front-end Web Development</li>
+                        <li><span>Programming Languages</span><br>C++ &nbsp; C &nbsp; Python &nbsp; SQL</li>
+                        <li><span>Cloud Computing</span><br></li>
+                    </ul>
+                    <p><br></p>
+                    <p>Soft Skills:</p>
+                    <ul>
+                        <li><span>Problem-solving</span></li>
+                        <li><span>Teamwork</span></li>
+                        <li><span>Communication</span></li>
+                        <li><span>Time-management</span></li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <p>Completed:</p>
+                    <ul>
+                        <li><span>XII (CBSE) &nbsp; &nbsp; 92.8% </span><br> from Little Angels Sr. Sec. School, Sonipat</li>
+                        <li><span>X (CBSE) &nbsp; &nbsp; 96.6%</span><br>from Little Angels Sr. Sec. School, Sonipat</li>
+                    </ul>
+                    <p>Persuing:</p>
+                    <ul>
+                        <li><span> B.tech (CSE)</span><br> from DCRUST, Murthal, Sonipat, Haryana</li>
+                    </ul>
+                    <p>Extra Courses:</p>
+                    <ul>
+                        <li><span>Cloud Computing</span><br> from IIT, Kharagpur &nbsp; via NPTEL</li>
+                        <li><span>Data Analytics</span><br>from GOOGLE &nbsp; via Coursera</li>
+                    </ul>
+                    <p>Workshops Attended:</p>
+                    <ul>
+                        <li><span>App Development with low-code</span><br> at IIT, Roorkee &nbsp; conducted by Zoho</li>
+                        <li><span>AR/VR</span><br>at IIT, Roorkee &nbsp; conducted by Trium Designs </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Achievements">
+                    <p>At university:</p>
+                    <ul>
+                        <li><span>1 <sup>st</sup> at Exodia 2023</span><br> at IIT, Mandi</li>
+                        <li><span>1 <sup>st</sup> at Rhythm 2023</span><br> at DCRUST, Murthal</li>
+                    </ul>
+                    <p><br></p>
+                    <p>At School:</p>
+                    <ul>
+                        <li><span>Position Holder at various events</span> <br>such as Plays, Declamations, Group dance, Group singing</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="tab-contents" id="Interests">
+                    <p>Technical Interests:</p>
+                    <ul>
+                        <li><span>Artificial Intellicence & Machine Learning </span><br> building chatbots, automating machinery and transforming human-computer interaction</li>
+                        <li><span>Generative AI</span><br>Machines that dream up entirely new realities</li>
+                    </ul>
+                    <p><br></p>
+                    <p>Personal Interests:</p>
+                    <ul>
+                        <li><span>Bhangra</span><br>Awarded for performances at my university and other venues</li>
+                        <li><span>Cooking</span><br>Always up for a culinary adventure in the kitchen</li>
+                        <li><span>Painting</span><br>Transforming pigments into emotions, stories, and windows to the world</li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ---------------services------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p><br>Craft stunning websites that attract & engage.  I design user-friendly interfaces & optimize for conversions. Let's build your online presence! <br><br></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-pie"></i>
+                <h2>Data Analytics</h2>
+                <p><br>Unlock hidden insights in your data. I transform raw information into actionable strategies.  Let's make data-driven decisions for your succes <br><br></p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-khanda"></i>
+                <h2>Bhangra Coach</h2>
+                <p><br>Unleash your inner dancer! Learn energetic Bhangra with my fun & effective classes. All levels welcome, from beginner to bhangra pro. Move to the dhol beat & celebrate life! <br><br></p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------portfolio---------------- -->
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work / Portfolio </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work 1.png" alt="work 1">
+                <div class="layer">
+                    <h3>Social Media Website</h3>
+                    <p>It lets you connect with strangers living thousands of miles away, encouraging the enhancement of your social life</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work 2.png" alt="work 2">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>It lets you connect with strangers living thousands of miles away, encouraging the enhancement of your social life</p>
+                    <a href="#"><i class="fa-solid fa-music"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work 3.png" alt="work 3">
+                <div class="layer">
+                    <h3>Medical Helpline Website</h3>
+                    <p>It lets you connect with strangers living thousands of miles away, encouraging the enhancement of your social life</p>
+                    <a href="#"><i class="fa-solid fa-truck-medical"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- ---------------contact----------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> tanaynagpal5@gmail.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> +91 9729397268</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/tanaynagpal/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/tanaynagpal/Profile"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/tanay_nagpal/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://x.com/nagpal_tanay"><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>                   
+                    <textarea name="Message" rows="6" placeholder="Enter Your Message" required></textarea>
+                    <button class="btn" type="submit">SUBMIT</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
