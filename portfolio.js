@@ -10,6 +10,7 @@ async function sendMail(){
     let name= document.getElementById("name").value
     let email= document.getElementById("email").value
     let message= document.getElementById("message").value
+    let toEmail="tanaynagpal5@gmail.com"
     if(!name || !email || !message){
         alert("Please fill all inputs")
         button.innerHTML="Submit"
@@ -17,7 +18,7 @@ async function sendMail(){
         return
     }
     
-    const data={name,email,message}
+    const data={name,email,message,toEmail}
     const response = await fetch("https://profile-backend-6tw2.onrender.com/send-mail",
     {
         method: "POST",
